@@ -33,7 +33,7 @@ describe('functionality for tricks displaying and adding', () => {
 describe('functionality for adding new tricks into form and seeing the new tricks render on the page', () => {
   beforeEach(() => {
     cy.intercept('GET', 'http://localhost:3001/api/v1/tricks', { fixture: 'tricks.json' }).as('getTricks');
-    cy.visit('http://localhost:3000/'); 
+    cy.visit('http://localhost:3000/');
     cy.wait('@getTricks');
   });
 
@@ -48,9 +48,9 @@ describe('functionality for adding new tricks into form and seeing the new trick
     cy.get('form').submit();
 
     cy.get('.tricks-container').should('contain', trickName)
-    .and('contain', 'Regular')
-    .and('contain', 'Rail')
-    .and('contain', tutorialLink);
-  
+      .and('contain', 'Regular')
+      .and('contain', 'Rail')
+      .and('contain', tutorialLink);
+
   });
 });
