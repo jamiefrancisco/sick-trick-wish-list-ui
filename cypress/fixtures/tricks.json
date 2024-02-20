@@ -1,0 +1,23 @@
+[
+  {
+    "stance": "goofy",
+    "name": "hardflip",
+    "obstacle": "bank",
+    "tutorial": "https://www.youtube.com/watch?v=exampleHardflip",
+    "id": 4
+  },
+  {
+    "stance": "regular",
+    "name": "backside tailslide",
+    "obstacle": "rail",
+    "tutorial": "https://www.youtube.com/watch?v=exampleTailslide",
+    "id": 5
+  },
+  {
+    "stance": "switch",
+    "name": "varial kickflip",
+    "obstacle": "gap",
+    "tutorial": "https://www.youtube.com/watch?v=exampleVarialKickflip",
+    "id": 6
+  }
+]
